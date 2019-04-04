@@ -6,6 +6,7 @@
   "author": "Hung Vu <hungvm@yahoo.com>",
   "license": "MIT",
   "devDependencies": {
+    "@storybook/addon-info": "^5.0.6",
     "@storybook/addons": "^5.0.6",
     "@storybook/react": "^5.0.6",
     "babel-core": "^6.26.3",

@@ -33,3 +33,17 @@ import JSXAddon from 'storybook-addon-jsx'
 .addWithJSX('with background purple', () => 
         <Button color="white" bg="purple" children="Hello with children" />
     );
+
+13. Apply style to a React Storybook with the Info addon to turn stories into documentation
+- install info addon
+$ yarn add -D @storybook/addon-info
+
+- add this to the Button.stories.js
+import { withInfo } from '@storybook/addon-info'
+
+.addWithJSX('with background purple',withInfo(
+        `descriptive text for this story`
+    ),(() => 
+        <Button color="white" bg="purple" children="Hello with children" />
+    ));
+
