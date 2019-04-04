@@ -17,3 +17,19 @@ $ touch .storybook/config.js
 
 7. Now run the storybook then you should see stories about your Button component
 $ npm run storybook
+
+8. Create the .storybook/welcomeStory.js and add to the config.js => you should see the Welcome story in the browser
+
+9. Add the storybook-addon-jsx
+$ yarn add -D @storybook/addons storybook-addon-jsx
+
+10. To configure the addon, we're going to create a new file in the .storybook folder called addon.js
+
+11. Modify the config.js
+import { configure, setAddon } from '@storybook/react'
+import JSXAddon from 'storybook-addon-jsx'
+
+12. Use addWithJSX
+.addWithJSX('with background purple', () => 
+        <Button color="white" bg="purple" children="Hello with children" />
+    );
