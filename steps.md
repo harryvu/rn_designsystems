@@ -11,3 +11,9 @@ $ mkdir .storybook src
 4. Create the config.js under .storybook folder
 $ touch .storybook/config.js
 
+5. Create the Button.js component 
+
+6. Create stories for the Button component
+
+7. Now run the storybook then you should see stories about your Button component
+$ npm run storybook
